@@ -1,27 +1,28 @@
 package com.mavengurus;
 
+import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.*;
 
-public class CalculatorTest {
+class CalculatorTest {
 
-
-    public void testSum() {
-        assert(Calculator.sum(2,3)==5);
+    @Test
+    void sum() {
+        assertEquals(Calculator.sum(2,3),5);
     }
 
-
-    public void testSub() {
-       assert(Calculator.sub(3,1)==2);
+    @Test
+    void sub() {
+        assertEquals(Calculator.sub(3,1),2);
     }
 
-
-    public void testMultiply() {
-        assert(Calculator.multiply(3,2)==6);
-
+    @Test
+    void multiply() {
+        assertEquals(Calculator.multiply(3,2),6);
     }
 
-
-    public void testDivide() {
-        assert(Calculator.divide(6,2)==3);
+    @Test
+    void divide() {
+        assertEquals(Calculator.divide(6,2),3);
     }
 }
