@@ -24,6 +24,13 @@
             <version>5.4.0</version>
             <scope>test</scope>
         </dependency>
+        <!-- to run junit 3 or 4 side by side with junit 4 we need to add vintage dependency-->
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <version>5.4.0</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
